@@ -1,0 +1,39 @@
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #252125;
+  background-color: #f5f3f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  color: #501649;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #501649;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #501649;
+}
+
+button:focus-visible {
+  outline: 3px solid #1766b0;
+  outline-offset: 3px;
+}

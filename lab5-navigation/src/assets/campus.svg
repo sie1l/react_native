@@ -1,0 +1,12 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#f5f3f5" />
+  <rect x="0" y="300" width="800" height="150" fill="#d9cdd7" />
+  <rect x="150" y="140" width="500" height="160" fill="#ffffff" stroke="#501649" stroke-width="4" />
+  <polygon points="150,140 400,60 650,140" fill="#501649" />
+  <rect x="330" y="200" width="140" height="100" fill="#501649" />
+  <rect x="190" y="180" width="50" height="50" fill="#1766b0" />
+  <rect x="560" y="180" width="50" height="50" fill="#1766b0" />
+  <text x="400" y="400" font-family="system-ui, sans-serif" font-size="28" fill="#501649" text-anchor="middle">
+    Навчальний корпус
+  </text>
+</svg>

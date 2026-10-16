@@ -1,0 +1,39 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #172033; background-color: #f5f3f5; }
+#root { max-width: 1000px; margin: 0 auto; padding: 24px; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+nav a { color: #1554b5; padding: 8px 0; text-decoration: none; }
+nav a.active { font-weight: bold; text-decoration: underline; text-decoration-thickness: 3px; }
+img { display: block; max-width: 100%; height: auto; }
+button, input { font: inherit; }
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 2px solid #501649;
+  border-radius: 6px;
+  color: #501649;
+  background: #ffffff;
+}
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+:focus-visible { outline: 3px solid #1554b5; outline-offset: 4px; }
+.video-frame { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+
+section { margin-bottom: 32px; }
+figure { margin: 0 0 12px; }
+figcaption { font-size: 0.9em; color: #4b5668; margin-top: 4px; }
+
+.calculator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.calculator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+[role='alert'] { color: #9b1c1c; }

@@ -1,0 +1,32 @@
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #252125;
+  background-color: #f5f3f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  color: #501649;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding: 4px 0;
+}

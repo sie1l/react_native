@@ -1,0 +1,9 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#252125" />
+  <circle cx="400" cy="200" r="120" fill="#501649" />
+  <circle cx="400" cy="200" r="80" fill="#1766b0" />
+  <circle cx="400" cy="200" r="40" fill="#f5f3f5" />
+  <text x="400" y="380" font-family="system-ui, sans-serif" font-size="28" fill="#f5f3f5" text-anchor="middle">
+    Деталь корпусу
+  </text>
+</svg>

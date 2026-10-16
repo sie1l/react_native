@@ -1,0 +1,82 @@
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #252125;
+  background-color: #f5f3f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  color: #501649;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-header h1 {
+  margin-bottom: 8px;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.subject {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #d9cdd7;
+  border-radius: 12px;
+  background-color: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+.subject h3 {
+  margin-top: 0;
+  color: #501649;
+}
+
+.subject p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+  .subjects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.select-button {
+  padding: 10px 16px;
+  border: 2px solid #501649;
+  border-radius: 6px;
+  font: inherit;
+  color: #501649;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.select-button[aria-pressed='true'] {
+  color: #ffffff;
+  background: #501649;
+}
+
+.select-button:focus-visible {
+  outline: 3px solid #1766b0;
+  outline-offset: 3px;
+}
