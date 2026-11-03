@@ -42,21 +42,22 @@ export default function MediaPage() {
         <h2>Відео</h2>
         <iframe
           className="video-frame"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="Відео про обрану тему"
+          src="https://www.youtube.com/embed/Tn6-PIqc4UM"
+          title="React in 100 Seconds — коротке відео про React"
           loading="lazy"
           allow="encrypted-media; picture-in-picture; fullscreen"
           allowFullScreen
         />
         <p>
           <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://www.youtube.com/watch?v=Tn6-PIqc4UM"
             target="_blank"
             rel="noopener noreferrer"
           >
             Відкрити відео на YouTube
           </a>
         </p>
+        <p>Джерело: YouTube, канал Fireship.</p>
       </section>
     </section>
   );

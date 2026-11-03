@@ -1,5 +1,5 @@
-import Heading from './components/Heading';
-import Subject from './components/Subject';
+import Heading from "./components/Heading";
+import Subject from "./components/Subject";
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
             description="Налаштування та супровід серверних і мережевих систем."
             credits={4}
             semester={7}
+            teacher="Кошелюк Віктор Андрійович"
           />
           <Subject
             subjectName="Економічне обґрунтування ІТ-проектів"
@@ -26,24 +27,28 @@ export default function App() {
             description="Алгоритми машинного навчання та інтелектуальні системи."
             credits={5}
             semester={7}
+            teacher="Юрій Анатолійович Лук'янчук"
           />
           <Subject
             subjectName="Основи комп'ютерного дизайну"
             description="Принципи проєктування інтерфейсів та графіки."
             credits={3}
             semester={7}
+            teacher="Ольга Володимирівна Неділько"
           />
           <Subject
             subjectName="Розробка кросплатформних додатків на базі React Native"
             description="Створення мобільних застосунків для iOS та Android."
             credits={4}
             semester={7}
+            teacher="Ящук Андрій Анатолійович"
           />
           <Subject
             subjectName="Технології розподілених мереж та паралельних обчислень"
             description="Паралельні алгоритми та розподілені обчислювальні системи."
             credits={4}
             semester={7}
+            teacher="Козубцов Ігор Миколайович"
           />
         </div>
       </section>
