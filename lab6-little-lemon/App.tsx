@@ -1,36 +1,39 @@
-import { StyleSheet, View } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { LittleLemonHeader } from './components/LittleLemonHeader';
-import { LittleLemonFooter } from './components/LittleLemonFooter';
-import MenuFlatScreen from './screens/MenuFlatScreen';
-import MenuGroupedScreen from './screens/MenuGroupedScreen';
-import WelcomeScreen from './screens/WelcomeScreen';
-import LoginScreen from './screens/LoginScreen';
+import { useColorScheme } from 'react-native';
+import {
+  DarkTheme,
+  DefaultTheme,
+  NavigationContainer,
+} from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Lab7App from './labs/Lab7App';
+import Lab8App from './labs/Lab8App';
+import DrawerFlow from './navigation/DrawerFlow';
+import StackFlow from './navigation/StackFlow';
+import TabsFlow from './navigation/TabsFlow';
 
-// Перед захистом по черзі підставляйте сюди MenuGroupedScreen, WelcomeScreen, LoginScreen.
-const ActiveScreen = MenuFlatScreen;
+const activeLab: 'lab7' | 'lab8' | 'lab9' = 'lab9';
+
+// Для №9 змініть цей рядок на StackFlow, TabsFlow або DrawerFlow.
+const ActiveNavigator = StackFlow;
+
 
 export default function App() {
-  return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>
-        <LittleLemonHeader />
-        <View style={styles.content}>
-          <ActiveScreen />
-        </View>
-        <LittleLemonFooter />
-      </SafeAreaView>
-    </SafeAreaProvider>
+  const isDark = useColorScheme() === 'dark';
+
+  return ( 
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider>
+        <StatusBar style={isDark && activeLab !== 'lab7' ? 'light' : 'dark'} />
+        {activeLab === 'lab7' && <Lab7App />}
+        {activeLab === 'lab8' && <Lab8App />}
+        {activeLab === 'lab9' && (
+          <NavigationContainer theme={isDark ? DarkTheme : DefaultTheme}>
+            <ActiveNavigator />
+          </NavigationContainer>
+        )}
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#495E57',
-  },
-  content: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-  },
-});

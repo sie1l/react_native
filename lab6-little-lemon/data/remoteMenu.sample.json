@@ -1,0 +1,6 @@
+{
+  "menu": [
+    { "id": 101, "title": "Carrot soup", "price": "8", "category": { "title": "Soups" } },
+    { "id": 102, "title": "Herbal tea", "price": "3", "category": { "title": "Beverages" } }
+  ]
+}

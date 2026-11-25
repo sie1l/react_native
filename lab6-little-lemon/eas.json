@@ -1,0 +1,25 @@
+{
+  "build": {
+    "preview-android": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview-ios": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "ios": {
+        "simulator": false
+      }
+    },
+    "ios-simulator": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "ios": {
+        "simulator": true
+      }
+    }
+  }
+}

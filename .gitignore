@@ -1,2 +1,12 @@
 **/node_modules/
 **/dist/
+reports/
+aws-capstone/
+aws-kms/
+**/.claude/
+**/AGENTS.md
+lab10-http/tools/
+lab10-http/responses/
+lab10-http/run-summary.json
+lab10-http/*.docx
+lab13-sqlite/build_and_verify.py

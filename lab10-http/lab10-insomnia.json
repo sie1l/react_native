@@ -1,0 +1,504 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-09T21:36:43.823Z",
+  "__export_source": "insomnia.desktop.app:v13.4.0",
+  "resources": [
+    {
+      "_id": "wrk_lab10_http",
+      "parentId": null,
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "name": "Лабораторна 10 — HTTP",
+      "description": "Навчальна колекція HTTP-запитів до echo-сервісу httpbin.org.",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_lab10_http",
+      "parentId": "wrk_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "name": "Лабораторна 10 — HTTP",
+      "description": "12 збережених запитів: GET, POST (form / multipart / JSON), PUT, PATCH, DELETE і навмисні статуси.",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_lab10_01",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/get",
+      "name": "01 GET — базовий",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1000,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_02",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/get",
+      "name": "02 GET — параметри й заголовки",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_0001",
+          "name": "title",
+          "value": "Гарбузовий суп із кмином",
+          "description": "",
+          "disabled": false
+        },
+        {
+          "id": "pair_0002",
+          "name": "category",
+          "value": "main",
+          "description": "",
+          "disabled": false
+        },
+        {
+          "id": "pair_0003",
+          "name": "limit",
+          "value": "3",
+          "description": "",
+          "disabled": false
+        },
+        {
+          "id": "pair_0004",
+          "name": "language",
+          "value": "uk",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0005"
+        },
+        {
+          "name": "X-Lab-Topic",
+          "value": "10",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0006"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -999,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_03",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/post",
+      "name": "03 POST — URL-encoded form",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_0007",
+            "name": "title",
+            "value": "Гарбузовий суп із кмином",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_0008",
+            "name": "category",
+            "value": "main",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_0009",
+            "name": "price",
+            "value": "120",
+            "description": "",
+            "disabled": false
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0010"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -998,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_04",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/post",
+      "name": "04 POST — Multipart Form",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_0011",
+            "name": "title",
+            "value": "Гарбузовий суп із кмином",
+            "description": "",
+            "disabled": false,
+            "type": "text",
+            "multiline": false
+          },
+          {
+            "id": "pair_0012",
+            "name": "category",
+            "value": "main",
+            "description": "",
+            "disabled": false,
+            "type": "text",
+            "multiline": false
+          },
+          {
+            "id": "pair_0013",
+            "name": "price",
+            "value": "120",
+            "description": "",
+            "disabled": false,
+            "type": "text",
+            "multiline": false
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0014"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -997,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_05",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/post",
+      "name": "05 POST — JSON",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Гарбузовий суп із кмином\",\n  \"category\": \"main\",\n  \"price\": 120,\n  \"available\": true,\n  \"published\": {\n    \"year\": 2026,\n    \"month\": 10,\n    \"day\": 25\n  },\n  \"tags\": [\n    \"vegan\",\n    \"autumn\"\n  ]\n}"
+      },
+      "parameters": [
+        {
+          "id": "pair_0015",
+          "name": "source",
+          "value": "lab10",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0016"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0017"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -996,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_06",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/put",
+      "name": "06 PUT — представлення",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Гарбузовий суп із кмином\",\n  \"category\": \"main\",\n  \"price\": 120,\n  \"available\": true,\n  \"published\": {\n    \"year\": 2026,\n    \"month\": 10,\n    \"day\": 25\n  },\n  \"tags\": [\n    \"vegan\",\n    \"autumn\"\n  ]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0018"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0019"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -995,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_07",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/patch",
+      "name": "07 PATCH — зміна ціни",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"price\": 135\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0020"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0021"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -994,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_08",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/delete",
+      "name": "08 DELETE — echo",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "disabled": false,
+          "id": "pair_0022"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -993,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_09",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/status/204",
+      "name": "09 GET — 204",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -992,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_10",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/status/404",
+      "name": "10 GET — 404",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -991,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_11",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/status/500",
+      "name": "11 GET — 500",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -990,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_lab10_12",
+      "parentId": "fld_lab10_http",
+      "modified": 1794260203823,
+      "created": 1794260203823,
+      "url": "https://httpbin.org/post",
+      "name": "12 GET — метод не дозволено",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -989,
+      "isPrivate": false,
+      "setting": {
+        "followRedirects": "global",
+        "sendCookies": "global",
+        "storeCookies": "global"
+      },
+      "pathParameters": [],
+      "cookieJar": {},
+      "_type": "request"
+    }
+  ]
+}

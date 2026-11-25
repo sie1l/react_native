@@ -1,13 +1,15 @@
 {
   "expo": {
-    "name": "lab6-little-lemon",
+    "name": "Little Lemon",
     "slug": "lab6-little-lemon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.example.littlelemon.student",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +18,16 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "edu.example.littlelemon.student",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-sqlite"
+    ]
   }
 }

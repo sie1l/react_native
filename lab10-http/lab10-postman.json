@@ -1,0 +1,397 @@
+{
+  "info": {
+    "name": "Лабораторна 10 — HTTP (httpbin)",
+    "description": "12 навчальних запитів до https://httpbin.org. Дані про страву вигадані. Імпорт: Postman → Import → File.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "01 GET — базовий",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/get",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "02 GET — параметри й заголовки",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-Lab-Topic",
+            "value": "10",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/get?title=%D0%93%D0%B0%D1%80%D0%B1%D1%83%D0%B7%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%81%D1%83%D0%BF%20%D1%96%D0%B7%20%D0%BA%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC&category=main&limit=3&language=uk",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "title",
+              "value": "Гарбузовий суп із кмином"
+            },
+            {
+              "key": "category",
+              "value": "main"
+            },
+            {
+              "key": "limit",
+              "value": "3"
+            },
+            {
+              "key": "language",
+              "value": "uk"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "03 POST — URL-encoded form",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/post",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": []
+        },
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "title",
+              "value": "Гарбузовий суп із кмином",
+              "type": "text"
+            },
+            {
+              "key": "category",
+              "value": "main",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "120",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "04 POST — Multipart Form",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/post",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": []
+        },
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "Гарбузовий суп із кмином",
+              "type": "text"
+            },
+            {
+              "key": "category",
+              "value": "main",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "120",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "05 POST — JSON",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/post?source=lab10",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": [
+            {
+              "key": "source",
+              "value": "lab10"
+            }
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Гарбузовий суп із кмином\",\n  \"category\": \"main\",\n  \"price\": 120,\n  \"available\": true,\n  \"published\": {\n    \"year\": 2026,\n    \"month\": 10,\n    \"day\": 25\n  },\n  \"tags\": [\n    \"vegan\",\n    \"autumn\"\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "06 PUT — представлення",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/put",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "put"
+          ],
+          "query": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Гарбузовий суп із кмином\",\n  \"category\": \"main\",\n  \"price\": 120,\n  \"available\": true,\n  \"published\": {\n    \"year\": 2026,\n    \"month\": 10,\n    \"day\": 25\n  },\n  \"tags\": [\n    \"vegan\",\n    \"autumn\"\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "07 PATCH — зміна ціни",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/patch",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "patch"
+          ],
+          "query": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 135\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "08 DELETE — echo",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://httpbin.org/delete",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "delete"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "09 GET — 204",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/status/204",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "status",
+            "204"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "10 GET — 404",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/status/404",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "status",
+            "404"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "11 GET — 500",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/status/500",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "status",
+            "500"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "12 GET — метод не дозволено",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/post",
+          "protocol": "https",
+          "host": [
+            "httpbin.org"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://httpbin.org"
+    }
+  ]
+}
